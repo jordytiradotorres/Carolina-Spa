@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css?family=Italianno|Lato:400,700,900|Raleway:400,700,900');
+
+// tipografia
+$Raleway: 'Raleway', sans-serif;
+$Italianno: 'Italianno', cursive;
+$Lato: 'Lato', sans-serif;
+
+// colores
+$color-fondo: #f8f8f8;
+$color-rosa: #e082a8;
+$color-verde: #8ed3cc;
+$color-verde-hover: #b6ecde;
+$color-blanco: #ffffff;
+$color-negro: #000000;
+$color-gris: #979797;
+
+// media-queries
+$movil: 567px;
+$tablet: 768px;
+$desktop: 1024px;
+
+.container {
+  width: 95%;
+  margin: 0 auto;
+  @include tablet {
+    width: 85%;
+  }
+  @include desktop {
+    width: 80%;
+  }
+}

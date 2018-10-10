@@ -1,0 +1,35 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-top: 2rem;
+  @include tablet {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr auto;
+  }
+
+  h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin: 2rem 0;
+    text-transform: uppercase;
+    font-family: $Raleway;
+  }
+  p {
+    line-height: 2;
+    font-size: 1rem;
+    margin-bottom: .5rem;
+    font-family: $Raleway;
+  }
+  &__copyright {
+    font-size: .85rem;
+    color: $color-gris;
+    margin-bottom: 1rem;
+    border-top: 1px solid #cfe8f5;
+    padding: .8rem 0;
+    @include tablet {
+      grid-area: 2 / 1 / 3 / 4;
+    }
+  }
+}

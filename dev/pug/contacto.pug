@@ -1,0 +1,16 @@
+extends templates/template
+block append config
+    - pageActual = 'contacto'
+block contacto
+    .container
+        form.formulario#formulario
+            p
+                label(for="nombre") Nombre:
+                input#nombre(type="text", placeholder="Tu nombre", required)
+            p
+                label(for="email") E-mail:
+                input#email(type="email", placeholder="Tu email", required)
+            p
+                label(for="mensaje") Mensaje:
+                textarea#mensaje(rows="5", cols="20", placeholder="Tu mensaje")
+            button.button(type="submit") Enviar

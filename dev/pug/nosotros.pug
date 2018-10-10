@@ -1,0 +1,66 @@
+extends templates/template
+block append config
+    - pageActual = 'Nosotros'
+block nosotros
+    .container
+        main.nosotros
+            p.nosotros__parrafo
+                | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aspernatur at aut consequatur cum, dolore
+                | ducimus eaque eius et facere ipsam maiores modi nesciunt, nobis odio odit pariatur reprehenderit voluptatum!
+            p.nosotros__parrafo
+                | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab, architecto aspernatur cumque debitis deleniti
+                | deserunt dignissimos distinctio ipsam libero placeat possimus quibusdam quidem ratione rem
+                | saepe sint totam ut vel?
+            p.nosotros__parrafo
+                | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi explicabo officia porro sint sit suscipit!
+                | Assumenda blanditiis ea est et explicabo illo ipsa magnam molestiae, molestias, nisi numquam quo repellat.
+            |
+            .nosotros__grid
+                section.nosotros__section
+                    +titulos('conoce nuestras', 'instalaciones')
+                    |
+                    figure.nosotros__figure
+                        img.nosotros__img(src="img/galeria_mini_01.jpg", alt="galeria")
+                        img.nosotros__img(src="img/galeria_mini_02.jpg", alt="galeria")
+                        img.nosotros__img(src="img/galeria_mini_03.jpg", alt="galeria")
+                    |
+                aside.nosotros__aside
+                    h2 Horarios
+                    p Dolor doloremque est laudantium obcaecati quibusdam ratione sapiente sequi! Eum, rem, veniam.
+                    table.table
+                        thead
+                            tr
+                                th Día
+                                th De
+                                th Hasta
+                        tbody
+                            tr
+                                td Lunes
+                                td 09:00
+                                td 19:00
+                            tr
+                                td Martes
+                                td 09:00
+                                td 19:00
+                            tr
+                                td Miércoles
+                                td 09:00
+                                td 19:00
+                            tr
+                                td Jueves
+                                td 09:00
+                                td 19:00
+                            tr
+                                td Viernes
+                                td 09:00
+                                td 19:00
+                            tr
+                                td Sábado
+                                td 10:00
+                                td 14:00
+                            tr
+                                td Domingo
+                                td Cerrado
+                                td Cerrado
+
+

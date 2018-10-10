@@ -1,0 +1,36 @@
+.productos {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-gap: 1.5rem;
+  text-align: center;
+  margin-top: 1.5rem;
+
+  @include movil {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  @include tablet {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  @include desktop {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .card {
+    border-radius: 8px;
+    background-color: $color-blanco;
+    &__title {
+      margin: 1rem 0;
+      color: $color-rosa;
+      text-transform: uppercase;
+      font-size: 1.3rem;
+    }
+    &__parrafo {
+      line-height: 2;
+    }
+    &__precio {
+      font-size: 1.5rem;
+      color: $color-gris;
+      margin: 1rem;
+    }
+  }
+}

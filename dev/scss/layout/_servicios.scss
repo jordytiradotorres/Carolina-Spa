@@ -1,0 +1,22 @@
+.servicios {
+  display: grid;
+  grid-template-areas: "acordeon"
+                       "acordeon"
+                       "acordeon"
+                        "nuevosCursos";
+  grid-template-rows: 1fr;
+
+  @include tablet {
+    grid-template-areas: "acordeon acordeon acordeon nuevosCursos";
+  }
+  grid-gap: 1rem;
+
+  &__acordeon {
+    grid-area: acordeon;
+    margin-bottom: 50px;
+  }
+
+  &__nuevos-clientes {
+    grid-area: nuevosCursos;
+  }
+}

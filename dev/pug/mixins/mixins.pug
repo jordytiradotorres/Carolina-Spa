@@ -1,0 +1,13 @@
+// card
+mixin card(img, h3, precio, p="Conoce nuestros productos, en promocion ahora hasta mañana, aprovecha ahora mismo")
+    .card
+        img.card__img(src=`img/${img}`, alt="producto")
+        h3.card__title= h3
+        p.card__parrafo= p
+        p.card__precio= precio
+|
+|
+mixin titulos(title, content)
+    h2.titulos= title
+        span.titulos__contenido= content
+        

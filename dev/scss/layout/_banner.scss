@@ -1,0 +1,24 @@
+.banner {
+  @include tablet {
+    position: relative;
+  }
+  &__title {
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+    font-family: $Raleway;
+    font-size: 2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    @include  tablet {
+      position: absolute;
+      right: 0;
+      bottom: 2rem;
+      background-color: $color-verde;
+      padding: 1rem 3rem;
+      color: white;
+      font-weight: 900;
+      font-size: 3rem;
+    }
+  }
+}

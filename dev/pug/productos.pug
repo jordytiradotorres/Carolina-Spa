@@ -1,0 +1,13 @@
+extends templates/template
+block append config 
+    - pageActual = 'productos'
+block productos
+    main.productos.container
+        +card('producto_mini_01.jpg', 'Producto 1', '$25')
+        +card('producto_mini_02.jpg', 'Producto 2', '$15')
+        +card('producto_mini_03.jpg', 'Producto 3', '$25')
+        +card('producto_mini_04.jpg', 'Producto 4', '$45')
+        +card('producto_mini_05.jpg', 'Producto 5', '$15')
+        +card('producto_mini_06.jpg', 'Producto 6', '$30')
+        +card('producto_mini_07.jpg', 'Producto 7', '$15')
+        +card('producto_mini_08.jpg', 'Producto 8', '$60')

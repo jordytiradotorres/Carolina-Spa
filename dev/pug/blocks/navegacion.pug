@@ -1,0 +1,12 @@
+.contenedor-navegacion
+    nav#menuicono
+        img#menu-img(src="img/iconomenu.png" alt="menu" width="35" height="28")
+        span Carolina Spa
+    nav.navegacion#navegacion-principal
+        .container
+            ul.navegacion__lista
+                each nav in pages
+                    if (nav === 'inicio')
+                        li.navegacion__item: a.navegacion__link(href="/")= nav
+                    else
+                        li.navegacion__item: a.navegacion__link(href= `${nav}.html`)= nav

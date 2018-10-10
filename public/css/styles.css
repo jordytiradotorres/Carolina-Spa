@@ -1,0 +1,321 @@
+@import url("https://fonts.googleapis.com/css?family=Italianno|Lato:400,700,900|Raleway:400,700,900");
+.container {
+  width: 95%;
+  margin: 0 auto; }
+  @media screen and (min-width: 768px) {
+    .container {
+      width: 85%; } }
+  @media screen and (min-width: 1024px) {
+    .container {
+      width: 80%; } }
+
+html {
+  box-sizing: border-box;
+  font-size: 16px; }
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0; }
+
+body {
+  font-family: 'Lato', sans-serif;
+  background-color: #f8f8f8; }
+
+ul {
+  padding-left: 0; }
+
+ul li {
+  list-style-type: none; }
+
+a {
+  text-decoration: none; }
+
+img {
+  height: auto;
+  max-width: 100%; }
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  @media screen and (min-width: 768px) {
+    .header {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: flex-start; } }
+  .header__logo {
+    display: block; }
+  .header__img {
+    width: 100%;
+    max-width: 250px;
+    display: block;
+    margin-top: 1.5rem; }
+  .header__redesSociales {
+    margin: 1.5rem 0; }
+    .header__redesSociales__link {
+      display: inline-block;
+      padding: 0 .5rem;
+      font-size: 2rem;
+      color: #e082a8; }
+
+.contenedor-navegacion {
+  background-color: #8ed3cc;
+  margin: 1em 0; }
+
+nav#menuicono {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: .5rem 1rem;
+  color: #ffffff;
+  font-size: 1.4rem; }
+  @media screen and (min-width: 768px) {
+    nav#menuicono {
+      display: none; } }
+  nav#menuicono #menu-img {
+    width: 50px;
+    height: 40px;
+    display: inline-block;
+    padding: .5rem;
+    background-color: #ffffff;
+    border-radius: 5px;
+    cursor: pointer; }
+
+.navegacion {
+  display: none; }
+  @media screen and (min-width: 768px) {
+    .navegacion {
+      display: block; } }
+  .navegacion__lista {
+    display: flex;
+    flex-direction: column;
+    text-align: center; }
+    @media screen and (min-width: 768px) {
+      .navegacion__lista {
+        flex-direction: row;
+        justify-content: space-between; } }
+  .navegacion__item:hover {
+    background-color: #b6ecde; }
+  .navegacion__item:last-of-type {
+    margin-bottom: 1rem; }
+    @media screen and (min-width: 768px) {
+      .navegacion__item:last-of-type {
+        margin-bottom: 0; } }
+  .navegacion__link {
+    color: #ffffff;
+    padding: 1rem;
+    display: block;
+    text-transform: uppercase;
+    font-size: 1.1rem; }
+
+@media screen and (min-width: 768px) {
+  .banner {
+    position: relative; } }
+
+.banner__title {
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+  font-family: "Raleway", sans-serif;
+  font-size: 2rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center; }
+  @media screen and (min-width: 768px) {
+    .banner__title {
+      position: absolute;
+      right: 0;
+      bottom: 2rem;
+      background-color: #8ed3cc;
+      padding: 1rem 3rem;
+      color: white;
+      font-weight: 900;
+      font-size: 3rem; } }
+
+.nosotros {
+  margin-top: 2rem;
+  font-family: "Lato", sans-serif; }
+  .nosotros__grid {
+    display: grid;
+    grid-template-columns: 100%; }
+    @media screen and (min-width: 768px) {
+      .nosotros__grid {
+        grid-template-columns: 60% 40%;
+        grid-gap: 1rem; } }
+  .nosotros__parrafo {
+    text-align: center;
+    font-size: 1.2rem;
+    line-height: 2.1;
+    margin-bottom: 1rem; }
+  .nosotros__section .titulos {
+    font-family: "Italianno", cursive;
+    color: #e082a8;
+    font-size: 4rem;
+    text-align: center;
+    font-weight: normal; }
+  .nosotros__section .titulos__contenido {
+    display: block;
+    margin-top: -1.3rem;
+    font-family: "Lato", sans-serif;
+    color: #000000;
+    text-transform: uppercase;
+    font-size: 2rem; }
+  .nosotros__figure {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(3, 1fr);
+    grid-gap: 1rem;
+    justify-items: center;
+    margin-top: 1.5rem; }
+    @media screen and (min-width: 768px) {
+      .nosotros__figure {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 100%; } }
+  .nosotros__img {
+    display: block;
+    margin-bottom: 1rem;
+    cursor: pointer; }
+  .nosotros__aside {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background-color: #8ed3cc;
+    color: #ffffff;
+    padding: 1.5rem; }
+    .nosotros__aside h2 {
+      text-transform: uppercase;
+      font-size: 2rem;
+      padding-bottom: 2rem; }
+    .nosotros__aside p {
+      line-height: 1.8;
+      text-align: center;
+      font-size: 1.1rem;
+      font-family: "Raleway", sans-serif;
+      margin-bottom: 2.5rem; }
+    .nosotros__aside table {
+      border-collapse: collapse;
+      border: 2px solid #e082a8; }
+      .nosotros__aside table thead {
+        background-color: #e082a8; }
+      .nosotros__aside table tr,
+      .nosotros__aside table td {
+        padding: .5rem .12rem; }
+        .nosotros__aside table tr:hover,
+        .nosotros__aside table td:hover {
+          background-color: #979797; }
+      .nosotros__aside table th {
+        padding: 1.3rem; }
+    @media screen and (min-width: 768px) {
+      .nosotros__aside {
+        justify-content: flex-end; } }
+
+.servicios {
+  display: grid;
+  grid-template-areas: "acordeon" "acordeon" "acordeon" "nuevosCursos";
+  grid-template-rows: 1fr;
+  grid-gap: 1rem; }
+  @media screen and (min-width: 768px) {
+    .servicios {
+      grid-template-areas: "acordeon acordeon acordeon nuevosCursos"; } }
+  .servicios__acordeon {
+    grid-area: acordeon;
+    margin-bottom: 50px; }
+  .servicios__nuevos-clientes {
+    grid-area: nuevosCursos; }
+
+.productos {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-gap: 1.5rem;
+  text-align: center;
+  margin-top: 1.5rem; }
+  @media screen and (min-width: 567px) {
+    .productos {
+      grid-template-columns: repeat(2, 1fr); } }
+  @media screen and (min-width: 768px) {
+    .productos {
+      grid-template-columns: repeat(3, 1fr); } }
+  @media screen and (min-width: 1024px) {
+    .productos {
+      grid-template-columns: repeat(4, 1fr); } }
+  .productos .card {
+    border-radius: 8px;
+    background-color: #ffffff; }
+    .productos .card__title {
+      margin: 1rem 0;
+      color: #e082a8;
+      text-transform: uppercase;
+      font-size: 1.3rem; }
+    .productos .card__parrafo {
+      line-height: 2; }
+    .productos .card__precio {
+      font-size: 1.5rem;
+      color: #979797;
+      margin: 1rem; }
+
+.formulario {
+  padding: 3rem;
+  border: 2px solid #979797;
+  width: 80%;
+  margin: 5rem auto;
+  background-color: #ffffff; }
+  .formulario label {
+    display: block; }
+  .formulario input,
+  .formulario textarea {
+    margin: .8rem 0;
+    font-family: "Lato", sans-serif;
+    font-size: 1rem;
+    width: 100%;
+    padding: .6rem;
+    border-radius: 5px;
+    border: 1px solid #979797; }
+  .formulario .button {
+    padding: 1rem;
+    display: inline-block;
+    background-color: #8ed3cc;
+    cursor: pointer;
+    border: none;
+    text-decoration: none;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 1.4rem;
+    width: 40%;
+    min-width: 150px;
+    margin-top: .5rem; }
+    .formulario .button:hover {
+      background-color: #b6ecde; }
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-top: 2rem; }
+  @media screen and (min-width: 768px) {
+    .footer {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: 1fr auto; } }
+  .footer h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin: 2rem 0;
+    text-transform: uppercase;
+    font-family: "Raleway", sans-serif; }
+  .footer p {
+    line-height: 2;
+    font-size: 1rem;
+    margin-bottom: .5rem;
+    font-family: "Raleway", sans-serif; }
+  .footer__copyright {
+    font-size: .85rem;
+    color: #979797;
+    margin-bottom: 1rem;
+    border-top: 1px solid #cfe8f5;
+    padding: .8rem 0; }
+    @media screen and (min-width: 768px) {
+      .footer__copyright {
+        grid-area: 2 / 1 / 3 / 4; } }
