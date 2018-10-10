@@ -214,15 +214,43 @@ nav#menuicono {
 
 .servicios {
   display: grid;
-  grid-template-areas: "acordeon" "acordeon" "acordeon" "nuevosCursos";
+  grid-template-areas: "acordeon" "nuevosCursos";
   grid-template-rows: 1fr;
+  grid-template-columns: 100%;
+  margin-top: 2rem;
   grid-gap: 1rem; }
   @media screen and (min-width: 768px) {
     .servicios {
-      grid-template-areas: "acordeon acordeon acordeon nuevosCursos"; } }
+      grid-template-areas: "acordeon nuevosCursos";
+      grid-template-columns: 60% 40%; } }
+  .servicios__header {
+    min-height: 3em;
+    line-height: 3em;
+    text-transform: uppercase;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    padding: 0 0 0 2rem;
+    cursor: pointer;
+    background-color: #e082a8;
+    color: #ffffff;
+    font-size: 1.2rem; }
+  .servicios__contenido {
+    background-color: #ffffff;
+    padding: 1rem;
+    line-height: 1.8;
+    font-size: 1.2rem;
+    color: #000000; }
   .servicios__acordeon {
     grid-area: acordeon;
-    margin-bottom: 50px; }
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12); }
+    .servicios__acordeon .item {
+      max-height: 3rem;
+      margin-bottom: .1rem;
+      overflow: hidden;
+      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); }
+      .servicios__acordeon .item.active {
+        max-height: 600px; }
   .servicios__nuevos-clientes {
     grid-area: nuevosCursos; }
 
