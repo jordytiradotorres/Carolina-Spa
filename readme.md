@@ -1,4 +1,8 @@
-# PROYECTO FINAL PUG
-Página web creada en el curso de PUG de [Basics](http://www.basicsproyect.tk)
+# Proyecto Carolina Spa
 
-[Ver Página Final](http://www.aurore.ml/)
+## Descripcion ##
+### Proyecto de un Spa utilizando herramientas como sass, pug, y vanillaJS ###
+
+## Ejecutar ##
+### 1. npm install ###
+### 2. gulp ###
