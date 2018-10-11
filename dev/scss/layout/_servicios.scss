@@ -6,7 +6,7 @@
   grid-template-columns: 100%;
   margin-top: 2rem;
 
-  @include tablet {
+  @include desktop {
     grid-template-areas: "acordeon nuevosCursos";
     grid-template-columns: 60% 40%;
   }
@@ -53,5 +53,69 @@
 
   &__nuevos-clientes {
     grid-area: nuevosCursos;
+    padding: 1rem;
+    color: $color-blanco;
+    background-color: $color-verde;
+
+    &-title {
+      padding: 1.5rem 0;
+      font-size: 2rem;
+      text-align: center;
+      text-transform: uppercase;
+    }
+
+    &-texto {
+      font-size: 1.3rem;
+      text-align: center;
+      margin-bottom: 1.5rem;
+    }
+
+    div {
+      border: 2px dashed $color-blanco;
+      text-align: center;
+      padding: .7rem 0;
+      h2 {
+        font-size: 2.8rem;
+        text-transform: uppercase;
+      }
+      p {
+        font-size: 1.2rem;
+        text-transform: uppercase;
+        margin-top: .5rem;
+      }
+    }
+  }
+}
+
+// parallax
+.parallax {
+  text-align: center;
+  background: url("../img/bg_citas.jpg") no-repeat center center / cover fixed;
+  min-height: 400px;
+  margin-top: 2rem;
+  padding: 3rem 0;
+  color: $color-blanco;
+
+  &__title {
+    text-transform: uppercase;
+    font-size: 3.5rem;
+    font-weight: normal;
+    padding-bottom: 3rem;
+    font-family: $Raleway;
+  }
+  &__text {
+    font-family: $Raleway;
+    padding: 0 8rem 2rem;
+    line-height: 2;
+    font-size: 1.2rem;
+  }
+  &__btn {
+    background-color: $color-verde;
+    padding: 1.4rem 4.8rem;
+    border: none;
+    text-transform: uppercase;
+    color: $color-blanco;
+    font-size: 1.2rem;
+    cursor: pointer;
   }
 }

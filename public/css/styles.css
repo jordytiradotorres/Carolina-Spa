@@ -97,16 +97,18 @@ nav#menuicono {
       .navegacion__lista {
         flex-direction: row;
         justify-content: space-between; } }
-  .navegacion__item:hover {
-    background-color: #b6ecde; }
-  .navegacion__item:last-of-type {
-    margin-bottom: 1rem; }
-    @media screen and (min-width: 768px) {
-      .navegacion__item:last-of-type {
-        margin-bottom: 0; } }
+  .navegacion__item {
+    transition: all .3s ease; }
+    .navegacion__item:hover {
+      background-color: #b6ecde; }
+    .navegacion__item:last-of-type {
+      margin-bottom: 1rem; }
+      @media screen and (min-width: 768px) {
+        .navegacion__item:last-of-type {
+          margin-bottom: 0; } }
   .navegacion__link {
     color: #ffffff;
-    padding: 1rem;
+    padding: 1rem 2.2rem;
     display: block;
     text-transform: uppercase;
     font-size: 1.1rem; }
@@ -219,7 +221,7 @@ nav#menuicono {
   grid-template-columns: 100%;
   margin-top: 2rem;
   grid-gap: 1rem; }
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 1024px) {
     .servicios {
       grid-template-areas: "acordeon nuevosCursos";
       grid-template-columns: 60% 40%; } }
@@ -252,7 +254,57 @@ nav#menuicono {
       .servicios__acordeon .item.active {
         max-height: 600px; }
   .servicios__nuevos-clientes {
-    grid-area: nuevosCursos; }
+    grid-area: nuevosCursos;
+    padding: 1rem;
+    color: #ffffff;
+    background-color: #8ed3cc; }
+    .servicios__nuevos-clientes-title {
+      padding: 1.5rem 0;
+      font-size: 2rem;
+      text-align: center;
+      text-transform: uppercase; }
+    .servicios__nuevos-clientes-texto {
+      font-size: 1.3rem;
+      text-align: center;
+      margin-bottom: 1.5rem; }
+    .servicios__nuevos-clientes div {
+      border: 2px dashed #ffffff;
+      text-align: center;
+      padding: .7rem 0; }
+      .servicios__nuevos-clientes div h2 {
+        font-size: 2.8rem;
+        text-transform: uppercase; }
+      .servicios__nuevos-clientes div p {
+        font-size: 1.2rem;
+        text-transform: uppercase;
+        margin-top: .5rem; }
+
+.parallax {
+  text-align: center;
+  background: url("../img/bg_citas.jpg") no-repeat center center/cover fixed;
+  min-height: 400px;
+  margin-top: 2rem;
+  padding: 3rem 0;
+  color: #ffffff; }
+  .parallax__title {
+    text-transform: uppercase;
+    font-size: 3.5rem;
+    font-weight: normal;
+    padding-bottom: 3rem;
+    font-family: "Raleway", sans-serif; }
+  .parallax__text {
+    font-family: "Raleway", sans-serif;
+    padding: 0 8rem 2rem;
+    line-height: 2;
+    font-size: 1.2rem; }
+  .parallax__btn {
+    background-color: #8ed3cc;
+    padding: 1.4rem 4.8rem;
+    border: none;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-size: 1.2rem;
+    cursor: pointer; }
 
 .productos {
   display: grid;
