@@ -1,5 +1,64 @@
 extends templates/template
 block banner
-    h1 slider de imagenes por hacer
+    h1 slider de imagenes por
 block inicio
-    h2 inicio
+    .container
+        section.miniServicios
+            +sobreNosotros()
+    |
+    section.bienvenidos
+        +titulos('bienvenido a nuestro', 'sitio web')
+        p.bienvenidos__text Te sentiras como nuevo(a) con nuestros
+            span masajistos profesionales
+    |
+    section.mitad
+        div.nosotros__aside
+            h2 Horarios
+            p Dolor doloremque est laudantium obcaecati quibusdam ratione sapiente sequi! Eum, rem, veniam.
+            table.table
+                thead
+                    tr
+                        th Día
+                        th De
+                        th Hasta
+                tbody
+                    tr
+                        td Lunes
+                        td 09:00
+                        td 19:00
+                    tr
+                        td Martes
+                        td 09:00
+                        td 19:00
+                    tr
+                        td Miércoles
+                        td 09:00
+                        td 19:00
+                    tr
+                        td Jueves
+                        td 09:00
+                        td 19:00
+                    tr
+                        td Viernes
+                        td 09:00
+                        td 19:00
+                    tr
+                        td Sábado
+                        td 10:00
+                        td 14:00
+                    tr
+                        td Domingo
+                        td Cerrado
+                        td Cerrado
+        aside.mitad__fondo
+    |
+    .container
+        section.productosInicio
+            +titulos('nuestros', 'productos')
+            .productos
+                +card('producto_mini_01.jpg', 'Producto 1', '$25')
+                +card('producto_mini_02.jpg', 'Producto 2', '$15')
+                +card('producto_mini_03.jpg', 'Producto 3', '$25')
+                +card('producto_mini_04.jpg', 'Producto 4', '$45')
+    |
+    include blocks/parallax

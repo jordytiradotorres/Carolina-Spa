@@ -1,0 +1,90 @@
+.miniServicios {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-gap: 2rem;
+
+  max-width: 350px;
+  margin: 0 auto;
+  @include desktop {
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 100%;
+  }
+
+  .sobreNosotros {
+    position: relative;
+    margin-bottom: 6.5rem;
+
+    &__img {
+      transition: all .3s ease;
+      border: 1px solid #dee2e6;
+      padding: .35rem;
+      border-radius: 5px;
+      display: block;
+      &:hover {
+        transform: scale(1.1) rotate(10deg);
+      }
+    }
+    
+    &__div {
+      text-align: center;
+      width: 90%;
+      border: 1px solid $color-blanco;
+      background-color: $color-blanco;
+      margin: 0 auto;
+      position: absolute;
+      bottom: -6rem;
+      left: 5%;
+    }
+
+    &__btn {
+      display: inline-block;
+      margin: 2rem 0 1rem 0;
+      background-color: $color-rosa;
+      color: $color-blanco;
+      width: 100%;
+      text-transform: uppercase;
+      padding: 1rem;
+      font-family: $Raleway;
+      font-size: .85rem;
+      border: 0;
+      cursor: pointer;
+    }
+  } // fin de sobreNosotros
+}
+
+.bienvenidos {
+  text-align: center;
+  margin-top: 2rem;
+
+  &__text {
+    font-size: 1.7rem;
+    margin: 3rem;
+    font-family: $Lato;
+    color: $color-gris;
+    span {
+      display: block;
+    }
+  }
+}
+
+// productos
+.productosInicio {
+  text-align: center;
+  .productos {
+    margin-top: 4rem;
+  }
+}
+
+.mitad {
+  display: grid;
+  grid-template-columns: 100%;
+  margin-bottom: 2rem;
+  @include tablet {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  &__fondo {
+    min-height: 600px;
+    background: url("../img/bg_horarios.jpg") no-repeat center / cover;
+  }
+}

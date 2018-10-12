@@ -9,6 +9,19 @@
     .container {
       width: 80%; } }
 
+.titulos {
+  color: #e082a8;
+  font-family: "Italianno", cursive;
+  font-size: 4rem;
+  font-weight: 500; }
+  .titulos__contenido {
+    line-height: 0;
+    display: block;
+    font-family: "Lato", sans-serif;
+    color: #000000;
+    text-transform: uppercase;
+    font-size: 2.1rem; }
+
 html {
   box-sizing: border-box;
   font-size: 16px; }
@@ -135,6 +148,77 @@ nav#menuicono {
       color: white;
       font-weight: 900;
       font-size: 3rem; } }
+
+.miniServicios {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-gap: 2rem;
+  max-width: 350px;
+  margin: 0 auto; }
+  @media screen and (min-width: 1024px) {
+    .miniServicios {
+      grid-template-columns: repeat(3, 1fr);
+      max-width: 100%; } }
+  .miniServicios .sobreNosotros {
+    position: relative;
+    margin-bottom: 6.5rem; }
+    .miniServicios .sobreNosotros__img {
+      transition: all .3s ease;
+      border: 1px solid #dee2e6;
+      padding: .35rem;
+      border-radius: 5px;
+      display: block; }
+      .miniServicios .sobreNosotros__img:hover {
+        -webkit-transform: scale(1.1) rotate(10deg);
+                transform: scale(1.1) rotate(10deg); }
+    .miniServicios .sobreNosotros__div {
+      text-align: center;
+      width: 90%;
+      border: 1px solid #ffffff;
+      background-color: #ffffff;
+      margin: 0 auto;
+      position: absolute;
+      bottom: -6rem;
+      left: 5%; }
+    .miniServicios .sobreNosotros__btn {
+      display: inline-block;
+      margin: 2rem 0 1rem 0;
+      background-color: #e082a8;
+      color: #ffffff;
+      width: 100%;
+      text-transform: uppercase;
+      padding: 1rem;
+      font-family: "Raleway", sans-serif;
+      font-size: .85rem;
+      border: 0;
+      cursor: pointer; }
+
+.bienvenidos {
+  text-align: center;
+  margin-top: 2rem; }
+  .bienvenidos__text {
+    font-size: 1.7rem;
+    margin: 3rem;
+    font-family: "Lato", sans-serif;
+    color: #979797; }
+    .bienvenidos__text span {
+      display: block; }
+
+.productosInicio {
+  text-align: center; }
+  .productosInicio .productos {
+    margin-top: 4rem; }
+
+.mitad {
+  display: grid;
+  grid-template-columns: 100%;
+  margin-bottom: 2rem; }
+  @media screen and (min-width: 768px) {
+    .mitad {
+      grid-template-columns: repeat(2, 1fr); } }
+  .mitad__fondo {
+    min-height: 600px;
+    background: url("../img/bg_horarios.jpg") no-repeat center/cover; }
 
 .nosotros {
   margin-top: 2rem;
@@ -284,8 +368,11 @@ nav#menuicono {
   background: url("../img/bg_citas.jpg") no-repeat center center/cover fixed;
   min-height: 400px;
   margin-top: 2rem;
-  padding: 3rem 0;
+  padding: 3rem;
   color: #ffffff; }
+  @media screen and (min-width: 768px) {
+    .parallax {
+      padding: 3rem 0; } }
   .parallax__title {
     text-transform: uppercase;
     font-size: 3.5rem;
@@ -294,9 +381,12 @@ nav#menuicono {
     font-family: "Raleway", sans-serif; }
   .parallax__text {
     font-family: "Raleway", sans-serif;
-    padding: 0 8rem 2rem;
+    padding: 0 1rem 2rem;
     line-height: 2;
     font-size: 1.2rem; }
+    @media screen and (min-width: 768px) {
+      .parallax__text {
+        padding: 0 8rem 2rem; } }
   .parallax__btn {
     background-color: #8ed3cc;
     padding: 1.4rem 4.8rem;
@@ -315,9 +405,6 @@ nav#menuicono {
   @media screen and (min-width: 567px) {
     .productos {
       grid-template-columns: repeat(2, 1fr); } }
-  @media screen and (min-width: 768px) {
-    .productos {
-      grid-template-columns: repeat(3, 1fr); } }
   @media screen and (min-width: 1024px) {
     .productos {
       grid-template-columns: repeat(4, 1fr); } }

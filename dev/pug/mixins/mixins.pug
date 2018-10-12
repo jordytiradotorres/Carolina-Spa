@@ -10,4 +10,15 @@ mixin card(img, h3, precio, p="Conoce nuestros productos, en promocion ahora has
 mixin titulos(title, content)
     h2.titulos= title
         span.titulos__contenido= content
-        
+|
+|
+mixin sobreNosotros()
+    - var titulos = ['conoce sobre', 'nuestros', 'visita nuestra']
+    - var descripcion = ['nosotros', 'servicios', 'tienda']
+    - for (let i=0; i<3; i++)
+        article.sobreNosotros
+            figure.sobreNosotros__figure
+                img.sobreNosotros__img(src=`img/servicio_0${i+1}.jpg`, alt=`servicio ${i+1}`)
+            div.sobreNosotros__div
+                +titulos(titulos[i], descripcion[i])
+                button.sobreNosotros__btn(type="button") Leer más

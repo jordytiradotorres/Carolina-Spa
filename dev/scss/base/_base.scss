@@ -29,3 +29,19 @@ $desktop: 1024px;
     width: 80%;
   }
 }
+
+// estilos de mixin titulos
+.titulos {
+  color: $color-rosa;
+  font-family: $Italianno;
+  font-size: 4rem;
+  font-weight: 500;
+  &__contenido {
+    line-height: 0;
+    display: block;
+    font-family: $Lato;
+    color: $color-negro;
+    text-transform: uppercase;
+    font-size: 2.1rem;
+  }
+}

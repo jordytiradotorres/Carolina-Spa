@@ -93,8 +93,12 @@
   background: url("../img/bg_citas.jpg") no-repeat center center / cover fixed;
   min-height: 400px;
   margin-top: 2rem;
-  padding: 3rem 0;
+  padding: 3rem;
   color: $color-blanco;
+
+  @include tablet {
+    padding: 3rem 0;
+  }
 
   &__title {
     text-transform: uppercase;
@@ -105,7 +109,10 @@
   }
   &__text {
     font-family: $Raleway;
-    padding: 0 8rem 2rem;
+    padding: 0 1rem 2rem;
+    @include tablet {
+      padding: 0 8rem 2rem;
+    }
     line-height: 2;
     font-size: 1.2rem;
   }
